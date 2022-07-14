@@ -11,8 +11,7 @@
 #' @param countsFileName Path to file with read counts 
 #' @param reference Stimulation (Cytokine or PBS) that will be used as the reference 
 #'
-#' @return None 
-#' @export 
+#' @export comparisonAnalysis
 comparisonAnalysis = function(metadataFileName,countsFileName,reference){
   metadata=read.table(metadataFileName,header = T,row.names = 1,sep = '\t',check.names = F)
   Counts=read.table(countsFileName,header = T,row.names = 1,sep = '\t',check.names = F)
