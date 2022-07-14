@@ -12,7 +12,7 @@
 #' @param reference Stimulation (Cytokine or PBS) that will be used as the reference 
 #'
 #' @export
-comparisonAnalysis = function(metadataFileName,countsFileName,reference){
+comparisonAnalysis <- function(metadataFileName,countsFileName,reference){
   metadata=read.table(metadataFileName,header = T,row.names = 1,sep = '\t',check.names = F)
   Counts=read.table(countsFileName,header = T,row.names = 1,sep = '\t',check.names = F)
   
